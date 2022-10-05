@@ -11,6 +11,16 @@
 }
 
 @font-face {
+  font-family: 'BalfronRegular';
+  src: local('BalfronRegular'), local('BalfronRegular'),
+      url('../fonts/BalfronRegular.woff2') format('woff2'),
+      url('../fonts/BalfronRegular.woff') format('woff'),
+      url('../fonts/BalfronRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Artegra Sans Extended SC';
   src: local('Artegra Sans Extended SC Bold'), local('Artegra-Sans-Extended-SC-Bold'),
         url('../fonts/ArtegraSansExSCBold.woff2') format('woff2'),
