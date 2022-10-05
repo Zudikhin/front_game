@@ -1,0 +1,92 @@
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+.main {
+    background: linear-gradient(0deg, rgba(45, 49, 57, 0.7), rgba(45, 49, 57, 0.7)), url(../img/back.png);
+    background-size: cover;
+    background-position: 50%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-top: 210px;
+    &_block {
+        animation: 1.5s ease-out 0s 1 slideInFromLeft;
+        &_uppertitle {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            & p {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                left: 200px;
+                top: 0px;
+                width: calc(100% - 200px);
+                height: 2px;
+                background: #FFFFFF;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        & h1 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 28px;
+            color: #FFFFFF;
+            margin-top: 10px;
+        }
+    }
+    @media (min-width: 576px) {
+        &_block {
+            &_uppertitle {
+                &::after {
+                    width: 122px;
+                }
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        &_block {
+            &_uppertitle {
+                & p {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+                &::after {
+                    left: 260px;
+                }
+            }
+            & h1 {
+                font-size: 54px;
+                line-height: 50px;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        padding-top: 200px;
+        &_block {
+            & h1 {
+                font-size: 76px;
+                line-height: 67px;
+            }
+        }
+    }
+    @media (min-width: 1536px) {
+        padding-top: 284px;
+    }
+}

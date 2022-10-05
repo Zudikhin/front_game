@@ -1,0 +1,157 @@
+.television {
+    box-sizing: border-box;
+    padding: 0px 15px;
+    position: relative;
+    margin-top: 50px;
+    & ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & li {
+            & a {
+                & img {
+                    width: 60px;
+                }
+            }
+        }
+    }
+    &_feature {
+        width: 360px;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 50px;
+        &_one {
+            position: absolute;
+            left: 117px;
+            top: 100px;
+            width: 120px;
+            transform: rotate(7deg);
+        }
+        &_two {
+            position: absolute;
+            left: 56px;
+            top: 210px;
+            width: 120px;
+            -webkit-transform: rotate(7deg);
+            transform: rotate(-7deg);
+        }
+        &_three {
+            position: absolute;
+            right: 63px;
+            top: 268px;
+            width: 120px;
+            -webkit-transform: rotate(7deg);
+            transform: rotate(5deg);
+        }
+        &_four {
+            position: absolute;
+            left: 49px;
+            top: 323px;
+            width: 120px;
+            -webkit-transform: rotate(7deg);
+            transform: rotate(5deg);
+        }
+        &_five {
+            position: absolute;
+            right: 77px;
+            top: 375px;
+            width: 120px;
+            -webkit-transform: rotate(7deg);
+            transform: rotate(-4deg);
+        }
+        &_six {
+            position: absolute;
+            right: 131px;
+            top: 488px;
+            width: 100px;
+            -webkit-transform: rotate(7deg);
+            transform: rotate(27deg);
+        }
+        &_seven {
+            position: absolute;
+            right: 151px;
+            bottom: 384px;
+            width: 80px;
+            -webkit-transform: rotate(7deg);
+            transform: rotate(-16deg);
+        }
+        &_main {
+            width: 100%;
+            position: relative;
+            z-index: 3;
+        }
+    }
+    @media (min-width: 768px) {
+        padding: 0px 30px;
+    }
+    @media (min-width: 1200px) {
+        padding: 0px 120px;
+        margin-top: 100px;
+        & ul {
+            & li {
+                & a {
+                    & img {
+                        width: 160px;
+                    }
+                }
+            }
+        }
+        &_feature {
+            width: 1040px;
+            &_one {
+                left: 349px;
+                top: 300px;
+                width: 300px;
+                transform: rotate(7deg);
+            }
+            &_two {
+                left: 173px;
+                top: 623px;
+                width: 300px;
+                transform: rotate(-7deg);
+            }
+            &_three {
+                right: 183px;
+                top: 786px;
+                width: 320px;
+                transform: rotate(5deg);
+            }
+            &_four {
+                left: 135px;
+                top: 947px;
+                width: 280px;
+                transform: rotate(9deg);
+            }
+            &_five {
+                right: 234px;
+                top: 1093px;
+                width: 320px;
+                transform: rotate(-4deg);
+            }
+            &_six {
+                right: 405px;
+                top: 1419px;
+                width: 250px;
+                transform: rotate(27deg);
+            }
+            &_seven {
+                right: 436px;
+                bottom: 1100px;
+                width: 250px;
+                transform: rotate(-16deg);
+            }
+        }
+    }
+    @media (min-width: 1920px) {
+        margin-top: 226px;
+        & ul {
+            & li {
+                & a {
+                    & img {
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
